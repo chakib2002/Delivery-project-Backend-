@@ -1,0 +1,2 @@
+# Delivery-project-Backend-
+The delivery project is a plateform that connects Transporters and E-commercers together, in order to solve a real world issue in Algeria. Which is the delivery problem, when the e-commercers recieve orders from their clients sometimes it is hard for them to deliver these orders because the client lives in a diffrent region in the country. That is why we created this plateform, it connects those entrepreneurs with transporters  in order to make the process of delivery more flexible, secure and it helps them both keep their business alive.
