@@ -1,6 +1,6 @@
 const bcrypt = require('bcrypt')
 const passport= require('passport')
-const  connection = require('../../API/login_queries')
+const  connection = require('../API/login_queries')
 
 
 
