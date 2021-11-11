@@ -4,10 +4,10 @@ const env = process.env;
 
 const config = {
   db: { 
-    host: env.DB_HOST || 'ba8mjqrdgehrofcjujib-mysql.services.clever-cloud.com',
-    user: env.DB_USER || 'ufbayx6yxahkd9gf',
-    password: env.DB_PASSWORD || 'M9xCJPkcExbmwN5UrdCF',
-    database: env.DB_NAME || 'ba8mjqrdgehrofcjujib',
+    host: env.DB_HOST ,
+    user: env.DB_USER ,
+    password: env.DB_PASSWORD ,
+    database: env.DB_NAME ,
   },
   listPerPage: env.LIST_PER_PAGE || 10,
 };
