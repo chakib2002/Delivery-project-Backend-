@@ -32,7 +32,7 @@ Router.post('/register', async(req, res, next)=>{
                                     req.body.status
                                     )
                 .then(()=>{res.status(200).send({message : "user registered successfully"})})
-                .catch((err)=>{res.status(500).send({message : "An error has occured, please register again"+ err})})
+                .catch((err)=>{res.status(500).send({message : "An error has occured, please register again"})})
                 }else{
                     res.status(400).send({message : "Invalid Input"})
                 }

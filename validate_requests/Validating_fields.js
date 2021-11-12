@@ -12,5 +12,12 @@ const MaxChar = (number, column)=>{
         return false
     }
 }
+const IntArray=(input)=>{
+    if(! Array.isArray(input)){;return(False)}
+    valid=true
+    Number.isInteger(...input)
+    return(valid)
+}
 
-module.exports={MaxChar}
+
+module.exports={MaxChar, IntArray}

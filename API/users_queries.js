@@ -39,15 +39,15 @@ const insert_transportation_request = (async(id_transporter,price,departure,dest
 const search_items = (async (departure,destination)=>{
     try {
         result = await DB.query(`SELECT description,
-                                        length,
-                                        width, 
-                                        quantity, 
-                                        first_name, 
-                                        last_name, 
-                                        phone_number, 
-                                        avrRatings ,
-                                        departure,
-                                        destination
+                                    length,
+                                    width, 
+                                    quantity, 
+                                    first_name, 
+                                    last_name, 
+                                    phone_number, 
+                                    avrRatings ,
+                                    departure,
+                                    destination
                                 FROM item_posted
                                  INNER JOIN users ON item_posted.id_seller = users.id
                             
