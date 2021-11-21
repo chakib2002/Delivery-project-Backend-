@@ -1,4 +1,4 @@
-const {IntArray} = require('./Validating_fields')
+const {IntArray, Date} = require('./Validating_fields')
 
 var register = {
     "username":"string",
@@ -29,5 +29,26 @@ var item_request = {
     "id_transportation_posted_nc":["object",IntArray],
     "id_transportation_posted_c":["object",IntArray]
 }
+var transporter_request = {
+    "id_transporter" : "number",
+    "price" :"number",
+    "departure" :"string",
+    "destination" :"string",
+    "delivery_date" : ["string",Date],
+    "id_item_posted":["object",IntArray]
+}
+var transportation_post_confirmed = {
+    "departure" : "string",
+    "destination" : "string",
+    "delivery_date" : ["string",Date]
+} 
 
-module.exports={register, item_post, item_request}
+var transportation_post_not_confirmed ={
+    "departure" :"string",
+    "destination" :"string",
+    "number_items" :"number",
+    "necessary_number_items":"number",
+}
+
+module.exports={register, item_post, item_request, transporter_request,
+                transportation_post_confirmed, transportation_post_not_confirmed}

@@ -19,5 +19,16 @@ const IntArray=(input)=>{
     return(valid)
 }
 
+const Date=(str)=>{
+    valid=true
+    array=str.split("-").map((e)=>(parseInt(e)))
+    console.log(array)
+    if( array.length===3){
+        console.log(array[0]<2200 && array[0]>2000 && array[1]>0 && array[1]<13 && array[2]<31 && array[2]>0)
+    return(array[0]<2200 && array[0]>2000 && array[1]>0 && array[1]<13 && array[2]<31 && array[2]>0)
+    }else {
+        return(false)
+    }
 
-module.exports={MaxChar, IntArray}
+}
+module.exports={MaxChar, IntArray, Date}

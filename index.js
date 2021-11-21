@@ -6,6 +6,7 @@ const store = require('./database_config/DB_session').sessionStore
 const app = express()
 const authRoutes = require('./Routes/Authentication')
 const sellersRoutes = require('./Routes/Sellers')
+const transportersRoutes = require('./Routes/Transporter')
 
 const port = 3000;
 
@@ -44,6 +45,7 @@ app.get('/', function (req, res) {
 
 app.use(authRoutes)
 app.use('/seller', sellersRoutes)
+app.use('/transporter', transportersRoutes)
 
 
 
